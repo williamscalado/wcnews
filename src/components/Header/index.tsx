@@ -40,8 +40,9 @@ return(
                 }
                 </ul> 
             </nav>
-           
-            <ButtonSignIn />
+           <div className={style.ButtonSing}>
+            <ButtonSignIn  />
+            </div>
         </div>
         
     </header>
