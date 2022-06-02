@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaArrowDown, FaUserAlt } from "react-icons/fa";
 import style from "./index.module.scss";
 
 export const UserMenuButton = () => {
 	const [active, setActive] = useState(false);
 
-	const handleActiveMenu = () => {
-		setActive(active ? false : true);
-	};
+	const handleActiveMenu = () => setActive(active ? false : true);
+
+	useEffect(() => {
+		active ? setTimeout(handleActiveMenu, 8000) : false;
+	}, [active]);
 
 	return (
 		<>
@@ -20,10 +22,14 @@ export const UserMenuButton = () => {
 				</button>
 
 				{active && (
-					<div className={style.containerMenu}>
+					<div className={style.containerMenu} id="menuDropDown">
 						<ul>
-							<li>My account</li>
-							<li>Exit</li>
+							<li>
+								<a href="">My account</a>
+							</li>
+							<li>
+								<a href="">Exit</a>
+							</li>
 						</ul>
 					</div>
 				)}
