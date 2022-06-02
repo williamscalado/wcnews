@@ -5,9 +5,9 @@ const Products: NextPage = () => {
     return(
         <>
         <Head>
-            <title>WC news | Produtos</title>
+            <title>WC news | Contact</title>
         </Head>
-        <h1>Products</h1>
+        <h1>Contact</h1>
         </>
     )
 }

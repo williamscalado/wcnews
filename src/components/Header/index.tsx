@@ -8,17 +8,17 @@ export const Header = () => {
     const menuList = [
         {
             name: 'Home',
-            link: '#',
+            link: '/',
             active: true
         },
         {
             name: 'News',
-            link: '#',            
+            link: '/news',            
             active: false
         },
         {
             name: 'Contact',
-            link: '#',            
+            link: '/contact',            
             active: false
         },
     ]
