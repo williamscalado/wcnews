@@ -28,7 +28,7 @@ export const UserMenuButton = () => {
 								<a href="">My account</a>
 							</li>
 							<li>
-								<a href="">Exit</a>
+								<a href="/login">Exit</a>
 							</li>
 						</ul>
 					</div>
