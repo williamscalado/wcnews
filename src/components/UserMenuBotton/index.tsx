@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaArrowDown, FaUserAlt } from "react-icons/fa";
 import style from "./index.module.scss";
@@ -25,10 +26,10 @@ export const UserMenuButton = () => {
 					<div className={style.containerMenu} id="menuDropDown">
 						<ul>
 							<li>
-								<a href="">My account</a>
+								<Link href="#">My account</Link>
 							</li>
 							<li>
-								<a href="/login">Exit</a>
+								<Link href="/login">Exit</Link>
 							</li>
 						</ul>
 					</div>
